@@ -119,9 +119,10 @@ li a {
 .animationinterblock {
     background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
     animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
+    background-size: 100% 100%;
     background-attachment: fixed;
     height: 10px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -141,7 +142,7 @@ li a {
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
-    width: 200%;
+    width: 100%;
     height: 12em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
@@ -149,6 +150,7 @@ li a {
     bottom: 0;
     left: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .wave:nth-of-type(2) {
@@ -270,6 +272,7 @@ figcaption {
 }
 
 /* Animation block specs */
+
 .specblocks {
     position: relative;
 
@@ -423,6 +426,7 @@ figcaption {
     }
   }
   
+
 /*Section ratings*/
 
 /* Stars ratings*/
@@ -431,4 +435,64 @@ figcaption {
   color: orange;
 }
 
+/* Global rating board */
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
 /* Footer */

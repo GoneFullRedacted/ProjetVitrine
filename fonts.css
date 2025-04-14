@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Akony";
+    src: url("./fonts/AKONY/AKONY.woff");
+    src: url("./fonts/AKONY/AKONY.woff2");
+    font-weight: 400 700;
+  }
+
+  @font-face {
+    font-family: "Neuropol";
+    src: url("./fonts/Neuropol/Neuropol.otf");
+    font-weight: 400 700;
+  }

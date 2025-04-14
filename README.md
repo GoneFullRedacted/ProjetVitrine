@@ -45,3 +45,4 @@
 *Fonts* :
 
 - Akony : <https://unblast.com/download/54314/>
+- Neuropol : <https://www.1001fonts.com/neuropol-font.html>

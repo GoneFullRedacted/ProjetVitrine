@@ -20,25 +20,28 @@
 
 *Syntaxe MarkDown* :
 
-1. https://www.markdownguide.org/cheat-sheet/
+1. <https://www.markdownguide.org/cheat-sheet/>
 
-2. https://www.markdownguide.org/basic-syntax/
+2. <https://www.markdownguide.org/basic-syntax/>
 
-3. https://www.markdownguide.org/extended-syntax/
+3. <https://www.markdownguide.org/extended-syntax/>
 
 *Idées animations* :
 
-1. https://prismic.io/blog/css-background-effects
+1. <https://prismic.io/blog/css-background-effects>
 
-2. https://freefrontend.com/css-animated-backgrounds/
+2. <https://freefrontend.com/css-animated-backgrounds/>
 
-3. https://www.sliderrevolution.com/resources/css-animated-background/
+3. <https://www.sliderrevolution.com/resources/css-animated-background/>
 
+*Shooting stars animation* : <https://codepen.io/nefejames/pen/PwYMqoE>
 
-*Shooting stars animation* : https://codepen.io/nefejames/pen/PwYMqoE
+*Animations Wave CSS* : <https://codepen.io/baarbaracrr/pen/KKovmGb>
 
-*Animations Wave CSS* : https://codepen.io/baarbaracrr/pen/KKovmGb
+*Rotating Border Animation* : <https://codepen.io/RitikaAgrawal08/pen/qBYmYdN>
 
-*Rotating Border Animation* : https://codepen.io/RitikaAgrawal08/pen/qBYmYdN
+*Librairie CSS font aweomse* : <https://cdnjs.com/libraries/font-awesome>
 
-*Librairie CSS font aweomse* : https://cdnjs.com/libraries/font-awesome
+*Fonts* :
+
+- Akony : <https://unblast.com/download/54314/>

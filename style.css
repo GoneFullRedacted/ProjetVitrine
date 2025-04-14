@@ -284,7 +284,10 @@ li a {
     justify-content: space-evenly;
     align-content: flex-start;
     background-color: #1E1E1E;
-    padding: 10% 0;
+    padding: 10% 0 5% 0;
+    background-image: url(./images/product_bg_mirror.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
 }
 
 .prodpics {
@@ -514,7 +517,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #46C447;
+  border: 1px solid #5EC198;
   background-color: white;
   width: 20%;
   height: auto;
@@ -542,9 +545,17 @@ figcaption {
   display: block;
   max-width: 800px; /* Max width */
   margin: 0 auto;
-  border: 2px solid #46C447;
-  
+  border: 2px solid #5EC198;
   padding: 15px;
+  box-shadow: 5px 5px 20px -5px #5EC198;
+}
+
+.globalratings p{
+  color: black;
+}
+
+.heading{
+  color: black;
 }
 
 .fa {
@@ -562,6 +573,7 @@ figcaption {
   float: left;
   width: 15%;
   margin-top: 10px;
+  color: black;
 }
 
 .middle {
@@ -573,6 +585,7 @@ figcaption {
 /* Place text to the right */
 .right2 {
   text-align: right;
+  color: black;
 }
 
 /* Clear floats after the columns */

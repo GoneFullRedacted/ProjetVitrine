@@ -8,6 +8,7 @@ h1{
     font-style: normal;
     font-size: 32px;
     text-decoration: underline;
+    text-decoration-color:#5EC198;;
     text-underline-offset: 0.5em;
     margin-bottom: 10%;
 }

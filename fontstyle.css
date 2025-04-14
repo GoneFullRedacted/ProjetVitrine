@@ -1,3 +1,57 @@
 * {
     color: white;
 }
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    margin-bottom: 10%;
+}
+
+li{
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+figcaption {
+    font-family: "Tinos", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+p{
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.prodpics figcaption{
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    font-size: 32px;
+    margin-bottom: 5%;
+}
+
+.name{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 1% 0;
+}
+
+.comment {
+    font-size: 18px;
+    padding: 1% 0;
+}
+
+.infos p{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    padding-bottom: 5%;
+}

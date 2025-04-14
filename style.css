@@ -34,7 +34,7 @@ p,
 li,
 figcaption {
     text-wrap: pretty;
-    max-width: 65ch;
+    /* max-width: 65ch; */
 }
 
 
@@ -283,11 +283,13 @@ li a {
 
 figure {
     display: table;
+    text-align: center;
 }
 
 figcaption {
     display: table-caption;
     caption-side: top;
+    text-align: center;
 }
 
 .specs{
@@ -468,7 +470,7 @@ figcaption {
 .notes{
   margin: 5% 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -494,6 +496,7 @@ figcaption {
   align-items: center;
   border: 1px solid #46C447;
   background-color: white;
+  width: 100%;
 }
 
 .ratings{
@@ -614,9 +617,15 @@ footer {
 .logosocials{
   display: flex;
   align-items: center;
-  gap: 5%;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  margin-top: 1%;
 }
 
+.logosocials figure img{
+  height: 32px;
+}
 .botfoot{
   display: flex;
   justify-content: center;

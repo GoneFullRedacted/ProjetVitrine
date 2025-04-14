@@ -50,6 +50,14 @@ body {
   margin: 0;
 }
 
+.box-shadow {
+  box-shadow:  10px 14px -4px rgba(16,252,104,0.42);
+}
+
+.drop-shadow {
+  filter: drop-shadow #4CFF5F 0px 4px 4px 0px;
+}
+
 /* Section Header */
 
 header{

@@ -49,10 +49,20 @@ p{
 .comment {
     font-size: 18px;
     padding: 1% 0;
+    text-wrap: balance;
+    max-width: 65ch;
+}
+
+.globalratings p{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .infos p{
     font-family: "Akony", sans-serif;
     font-size: 24px;
     padding-bottom: 5%;
+}
+
+footer p{
+    max-width: 65ch;
 }

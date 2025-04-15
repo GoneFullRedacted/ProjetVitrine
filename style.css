@@ -55,9 +55,12 @@ body {
 }
 
 .drop-shadow {
-  filter: drop-shadow #4CFF5F 0px 4px 4px 0px;
+  filter: drop-shadow(rgb(73, 73, 73) 5px 5px 5px);
 }
 
+.drop-shadow2 {
+  filter: drop-shadow(rgb(169, 228, 151) 0px 5px 5px);
+}
 /* Section Header */
 
 header{
@@ -76,7 +79,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E1E1E;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(10, 13, 13, 1) 20%, rgba(14, 20, 20, 1) 40%, rgba(10, 19, 20, 1) 60%, rgba(7, 32, 33, 1) 80%);
 
 }
 
@@ -162,7 +166,7 @@ li a {
 /* Animation intersection */
 
 .animationinterblock {
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 3%, rgba(9, 9, 121, 1) 38%, rgba(18, 154, 181, 1) 68%, rgba(0, 212, 255, 1) 100%);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: scroll;
@@ -284,7 +288,7 @@ li a {
     justify-content: space-evenly;
     align-content: flex-start;
     background-color: #1E1E1E;
-    padding: 10% 0 5% 0;
+    padding: 5% 0 5% 0;
     background-image: url(./images/product_bg_mirror.png);
     object-fit: contain;
     background-repeat: no-repeat;
@@ -293,7 +297,8 @@ li a {
 .prodpics {
     display: flex;
     flex-direction: column;
-    align-content: space-evenly;
+    align-content: center;
+    justify-items: center;
     text-align: center;
     width: 33%;
 }
@@ -321,6 +326,30 @@ figcaption {
     text-align: left;
     padding-left: 15px;
     list-style-position: inside;
+}
+.cta {
+  background-image: linear-gradient(to right, #34e89e 0%, #0f3443  51%, #34e89e  100%)
+}
+
+.cta {
+  text-align: center;
+  margin: 5% 0 0 0;
+  padding: 20px;
+  width: 50%;
+  background-color: #ff9800;
+  border-radius: 25%;
+  border-color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #34e89e;
+  border-radius: 10px;
+}
+
+.cta:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Animation block specs */
@@ -492,7 +521,6 @@ figcaption {
   padding: 5% 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   text-align: center;
   width: 100%;
   overflow: hidden;
@@ -525,7 +553,13 @@ figcaption {
 }
 
 .ratings{
-    align-self: center;
+  align-self: center;
+  justify-content: bottom;
+  padding: 10px 0;
+}
+
+.rating p{
+  max-width: 17ch;
 }
 
 .rating figure {
@@ -601,6 +635,7 @@ figcaption {
   background-color: #f1f1f1;
   text-align: center;
   color: white;
+  outline: 1px solid #5EC198;
 }
 
 /* Individual bars */

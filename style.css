@@ -531,6 +531,7 @@ figcaption {
   overflow: hidden;
   background-image: url(./images/bg_ratings.svg);
   object-fit: fill;
+  flex-wrap: wrap;
 }
 
 .name{
@@ -553,6 +554,7 @@ figcaption {
   border: 1px solid #5EC198;
   background-color: white;
   width: 20%;
+  min-width: min-content;
   height: auto;
   box-shadow: 5px 5px 20px -5px #5EC198;
 }

@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size:1vmin;
+    font-size: clamp(1.125rem, 0.8438rem + 1.4063vw, 2.25rem);
     font-family: sans-serif;
   }
 
@@ -23,21 +23,26 @@ li {
     font-family: "Neuropol", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 0.6em;
 }
 
 figcaption {
     font-family: "Neuropol", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 0.5em;
 }
 
 p{
     font-family: "Neuropol", serif;
     font-weight: 400;
     line-height: 1.5;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(0.6rem, 1vw, 2rem);
+}
+
+.presentation p, .textbox p {
+    font-size: 0.5em;
+    width: 35ch;
 }
 
 .prodpics figcaption {
@@ -45,15 +50,12 @@ p{
     text-decoration: underline;
     text-underline-offset: 0.4em;
     text-decoration-color:#5EC198;
-    font-size: 2rem;
+    font-size: 0.8em;
     margin-bottom: 5%;
 }
 
-.name {
-    font-family: "Akony", sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 1% 0;
+.specs ul li {
+    font-size: 0.4rem;
 }
 
 .cta {
@@ -61,11 +63,26 @@ p{
     letter-spacing: 2px;
 }
 
-.comment {
-    font-size: 1rem;
+.name {
+    font-family: "Akony", sans-serif;
+    font-weight: 400;
+    font-size: 0.75em;
     padding: 1% 0;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #5EC198;
+}
+
+.comment {
+    font-size: 0.5em;
+    color: black;
+    padding: 0.2rem 0;
     text-wrap: balance;
     max-width: 65ch;
+}
+
+.globalratings {
+    font-size: 0.5em;
 }
 
 .globalratings p {
@@ -74,10 +91,20 @@ p{
 
 .infos p {
     font-family: "Akony", sans-serif;
-    font-size: 1.5rem;
+    font-size: 0.6rem;
     padding-bottom: 5%;
 }
 
+.infos a {
+    font-size: 0.6em;
+}
+
+.socials p{
+    font-size: 0.4em;
+    max-width: 50ch;
+}
+
 footer p {
+    font-size: 0.4em;
     max-width: 65ch;
 }

@@ -49,9 +49,12 @@
 
 *Notions* :
 
-Deux articles à propos des fonctions min(), max() et clamp() pour le responsive.
+Trois articles à propos des fonctions min(), max() et clamp() pour le responsive.
 
 - <https://web.dev/articles/min-max-clamp?hl=fr>
 - <https://www.lambdatest.com/blog/css-min-max-clamp-functions/>
 - <https://www.marcbacon.com/understanding-clamp/>
-- <https://www.marcbacon.com/tools/clamp-calculator/>
+
+*Flowchart quand utiliser X unités* : <https://whatunit.com/>
+
+*Calculateur clamp* : <https://www.marcbacon.com/tools/clamp-calculator/>

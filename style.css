@@ -13,11 +13,13 @@
 
 html {
   color-scheme: dark light;
+  /* width: clamp(0.875rem, 0.3438rem + 2.6563vw, 3rem); */
 }
 
 body {
   min-height: 100vh;
-  width: clamp(1000px, 100%, 200vw)
+  margin: 0;
+  overflow-x: hidden;
 }
 
 img,
@@ -52,10 +54,6 @@ img[src="./images/logo_notext_white-r.png"]{
     padding: 10px 0;
 }
 
-body {
-  margin: 0;
-}
-
 .box-shadow {
   box-shadow:  10px 14px -4px 5px rgb(0, 0, 0);
 }
@@ -67,6 +65,7 @@ body {
 .drop-shadow2 {
   filter: drop-shadow(rgb(169, 228, 151) 0px 5px 5px);
 }
+
 /* Section Header */
 
 header{
@@ -91,14 +90,14 @@ nav {
 }
 
 nav img{
-    margin-left: 15%;
+    margin-left: 5em;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     gap: 25px;
-    margin-right: 15%;
+    margin-right: 5em;
 }
 
 li a {
@@ -176,7 +175,7 @@ li a {
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: scroll;
-    height: 50px;
+    height: 1.5rem;
     overflow: auto;
     margin: auto;
     display: flex;
@@ -244,19 +243,24 @@ li a {
 
 /* Section Presentation */
 
-.presentation{
+.presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
     background-color: #1E1E1E;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
     background-image: url(./images/bg_pres.jpg);
     object-fit: contain;
     background-position: left;
+}
+
+.textbox h1 {
+  filter: drop-shadow(rgb(169, 228, 151) 5px 5px 5px)
+          drop-shadow(rgb(0, 0, 0) 5px 5px 5px);
 }
 
 .presentation img {
@@ -271,7 +275,7 @@ li a {
     align-items: center;
     text-align: center;
     background-color: #1E1E1E;
-    padding-top: 10%;
+    padding-top: 2em;
     background-image: url(./images/peripherals_bg.png);
     object-fit: contain;
 }
@@ -279,7 +283,7 @@ li a {
 .imgperipherals {
     display: flex;
     justify-content: center;
-    padding: 10% 0;
+    padding: 2em 0;
     gap: 50%;
 }
 
@@ -287,6 +291,7 @@ li a {
   height: 256px;
   filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 10px);
 }
+
 /*Section Products */
 
 .products {
@@ -294,7 +299,7 @@ li a {
     justify-content: space-evenly;
     align-content: flex-start;
     background-color: #1E1E1E;
-    padding: 5% 0 5% 0;
+    padding: 2em 0;
     background-image: url(./images/product_bg_mirror.png);
     object-fit: contain;
     background-repeat: no-repeat;
@@ -330,17 +335,18 @@ figcaption {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 1rem;
     list-style-position: inside;
 }
+
 .cta {
   background-image: linear-gradient(to right, #34e89e 0%, #0f3443  51%, #34e89e  100%)
 }
 
 .cta {
   text-align: center;
-  margin: 5% 0 0 0;
-  padding: 20px;
+  margin: 1em 0 0 0;
+  padding: 0.5em;
   width: 50%;
   background-color: #ff9800;
   border-radius: 25%;
@@ -363,7 +369,7 @@ figcaption {
 .specblocks {
     height: 100%;
     width: 75%;
-    margin-top: 15px;
+    margin-top: 1em;
     position: relative;
     color: #ffffff;
     background-color: #1E1E1E;
@@ -379,10 +385,10 @@ figcaption {
     align-self: center;
     padding: 1em;
     outline: 5px solid transparent;
-    box-shadow: 2px -5px 20px -5px rgba(255, 49, 49, 0.5),
-                5px 2px 20px -5px rgba(0, 255, 255, 0.5),
-                2px 5px 20px -5px rgba(57, 255, 20, 0.5),
-                -5px -2px 20px -5px rgba(255, 255, 113, 0.5);
+    box-shadow: 2px -5px 10px -5px rgba(255, 49, 49, 0.5),
+                5px 2px 10px -5px rgba(0, 255, 255, 0.5),
+                2px 5px 10px -5px rgba(57, 255, 20, 0.5),
+                -5px -2px 10px -5px rgba(255, 255, 113, 0.5);
   }
 
  .specblocks span {
@@ -524,7 +530,7 @@ figcaption {
 /*Section ratings*/
 
 .notes{
-  padding: 5% 0;
+  padding: 1em 0;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -534,19 +540,6 @@ figcaption {
   object-fit: fill;
   flex-wrap: wrap;
 }
-
-.name{
-  text-decoration: underline;
-  font-size: 18px;
-  color: black;
-}
-
-.comment{
-  text-wrap: wrap;
-  padding: 1% 5%;
-  color: black;
-}
-
 
 .rating{
   display: flex;
@@ -578,7 +571,7 @@ figcaption {
 .rating figure img{
   border-radius: 50%;
   width: 50%;
-  margin: 10px;
+  margin: 1em;
   align-self: center;
 }
 /* Global rating board */
@@ -587,8 +580,8 @@ figcaption {
   display: block;
   max-width: 800px; /* Max width */
   margin: 0 auto;
-  border: 2px solid #5EC198;
-  padding: 15px;
+  border: 1px solid #5EC198;
+  padding: 1.5em;
   box-shadow: 5px 5px 20px -5px #5EC198;
 }
 
@@ -602,7 +595,7 @@ figcaption {
 
 .fa {
   display: inline-block;
-  font-size: 25px;
+  font-size: 1rem;
   margin-right: 5px;
 }
 
@@ -673,7 +666,7 @@ footer {
   text-align: center;
   padding: 1% 5% 1% 5%;
   background-color: #1E1E1E;
-  margin-top: 5%;
+  margin-top: 1em;
 }
 
 .topfoot {
@@ -702,7 +695,7 @@ footer {
 }
 
 .logosocials figure img{
-  height: 32px;
+  height: 1rem;
 }
 
 .botfoot{
@@ -714,5 +707,5 @@ footer {
 }
 
 .botfoot img{
-  height: 64px;
+  height: 2.5rem;
 }

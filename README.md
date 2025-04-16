@@ -46,3 +46,12 @@
 
 - Akony : <https://unblast.com/download/54314/>
 - Neuropol : <https://www.1001fonts.com/neuropol-font.html>
+
+*Notions* :
+
+Deux articles à propos des fonctions min(), max() et clamp() pour le responsive.
+
+- <https://web.dev/articles/min-max-clamp?hl=fr>
+- <https://www.lambdatest.com/blog/css-min-max-clamp-functions/>
+- <https://www.marcbacon.com/understanding-clamp/>
+- <https://www.marcbacon.com/tools/clamp-calculator/>

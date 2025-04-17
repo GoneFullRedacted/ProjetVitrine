@@ -49,9 +49,11 @@ figcaption {
 /* Globals & variables */
 
 img[src="./images/logo_notext_white-r.png"]{
-    height: 128px;
+    height: 2.5rem;
     width: auto;
-    padding: 10px 0;
+    padding: 0 0.3rem;
+    margin: 0.5em 2em;
+    
 }
 
 .box-shadow {
@@ -81,6 +83,7 @@ header{
 nav {
     width: 100%;
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -89,15 +92,17 @@ nav {
 
 }
 
-nav img{
-    margin-left: 5em;
+.icon {
+  display: none;
 }
+
+
 
 nav ul {
     display: flex;
     list-style-type: none;
     gap: 25px;
-    margin-right: 5em;
+    margin-right: 5vw;
 }
 
 li a {
@@ -250,11 +255,11 @@ li a {
     justify-items: center;
     align-items: center;
     background-color: #1E1E1E;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     background-image: url(./images/bg_pres.jpg);
-    object-fit: contain;
+    object-fit: cover;
     background-position: left;
 }
 
@@ -264,7 +269,7 @@ li a {
 }
 
 .presentation img {
-    height: 512px;
+    height: 12em;
 }
 
 /* Section Peripherals */
@@ -283,12 +288,13 @@ li a {
 .imgperipherals {
     display: flex;
     justify-content: center;
+    width: 100%;
     padding: 2em 0;
-    gap: 50%;
+    gap: 5%;
 }
 
 .imgperipherals img{
-  height: 256px;
+  height: 6rem;
   filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 10px);
 }
 
@@ -298,6 +304,7 @@ li a {
     display: flex;
     justify-content: space-evenly;
     align-content: flex-start;
+    width: 100%;
     background-color: #1E1E1E;
     padding: 2em 0;
     background-image: url(./images/product_bg_mirror.png);
@@ -315,7 +322,9 @@ li a {
 }
 
 figure {
-    display: table;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -346,16 +355,15 @@ figcaption {
 .cta {
   text-align: center;
   margin: 1em 0 0 0;
-  padding: 0.5em;
-  width: 50%;
+  padding: 0.1em;
+  width: auto;
   background-color: #ff9800;
-  border-radius: 25%;
+  border-radius: 12.5%;
   border-color: black;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
   box-shadow: 0 0 20px #34e89e;
-  border-radius: 10px;
 }
 
 .cta:hover {

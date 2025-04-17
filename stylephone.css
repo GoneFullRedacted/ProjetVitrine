@@ -1,0 +1,98 @@
+
+
+  @media (max-width: 800px){
+
+
+    /* Menu hamburger */
+
+    #myLinks {
+        display: none;
+    }
+
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .icon {
+        display: block;
+        margin-right: 2em;
+    }
+
+      /* Partie présentation */
+
+    .presentation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentation img{
+        margin-bottom: 2em;
+    }
+
+    .presentation img:nth-child(2){
+        display: none;
+    }
+
+    .textbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    .textbox h1,
+    .textbox p {
+        text-align: center;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prodpics {
+        margin-bottom: 1.5em;
+    }
+
+    .prodpics figure figcaption{
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .specblocks{
+        display: none;
+    }
+
+    .rating:not(:first-child) {
+        display: none;
+    }
+
+    .rating:first-child{
+        display: flex;
+        width: 50vw;
+    }
+
+
+  }
+  
+  @media (max-width: 450px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    
+    .right2 {
+      display: none;
+    }
+  }

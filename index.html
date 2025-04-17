@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SiteVitrineProjet</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tinos&display=swap" rel="stylesheet">
@@ -11,23 +12,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylephone.css">
     <link rel="stylesheet" href="fontstyle.css">
-
+    <link rel="stylesheet" href="stylephone.css">
+    <script src="burger.js"></script>
 </head>
 <body>
 
     <!--En tête de la page-->
     <header>
-
         <nav id="home">
             <img src="./images/logo_notext_white-r.png">
-            <ul>
+            <ul id="myLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#pres">Presentation</a></li>
                 <li><a href="#prod">Products</a></li>
                 <li><a href="" target="_blank">Support</a></li>
-            </ul>
+            </ul>   
+            <a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div class=head>
             <div class="shooting-star"></div>
@@ -87,8 +90,8 @@
     <section class="products" id="prod">
         <div class="prodpics">
             <figure>
-                <img src="./images/illu_phone-1-r.png" class="drop-shadow2">
                 <figcaption>Essential</figcaption>
+                <img src="./images/illu_phone-1-r.png" class="drop-shadow2">
             </figure>
             <div class="specblocks">
                 <div class="specs">
@@ -115,8 +118,8 @@
         </div>
         <div class="prodpics">
             <figure>
-                <img src="./images/illu_phone-2-r.png" class="drop-shadow2">
                 <figcaption>Connect</figcaption>
+                <img src="./images/illu_phone-2-r.png" class="drop-shadow2">
             </figure>
             <div class="specblocks">
                 <div class="specs">
@@ -143,8 +146,8 @@
         </div>
         <div class="prodpics">
             <figure>
-                <img src="./images/illu_phone-3-r.png" class="drop-shadow2">
                 <figcaption>Pro</figcaption>
+                <img src="./images/illu_phone-3-r.png" class="drop-shadow2">
             </figure>
             <div class="specblocks">
                 <div class="specs">
